@@ -11,7 +11,7 @@ function calculateResults(event) {
 
     const values = gatherInputValues()
 
-    const fatigueComponent = 0.75 + (100 / 2);
+    const fatigueComponent = 0.75 + (1 / 2);
     const constantComponent = values.constantEffect ? 0.5 : 1;
     
     const skillComponent = values.enchant + (values.intelligence / 5) + (values.luck / 10)
