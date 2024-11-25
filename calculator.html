@@ -6,31 +6,54 @@
     </head>
     <body>
         <div id="enchantment-form-div">
-            <form id="enchantment-form">
-                <div id="enchant-div">
-                    <label for="enchant">Enchant skill:</label>
-                    <input type="number" name="enchant" id="enchant-input" required>
+            <div id="header-div">
+                <h1>OpenMW Enchantment Calculator</h1>
+            </div>
+            <div id="value-form">
+                <div id="enchant-div" class="combo-input">
+                    <div class="label">
+                        <label for="enchant">Enchant Skill</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="enchant" id="enchant-input" value="50">
+                    </div>
                 </div>
-                <div id="intelligence-div">
-                    <label for="intelligence">Intelligence:</label>
-                    <input type="number" name="intelligence" id="intelligence-input" required>
+                <div id="intelligence-div" class="combo-input">
+                    <div class="label">
+                        <label for="intelligence">Intelligence</label>
+                    </div>
+                    <div class="input-box" class="combo-input">
+                        <input type="number" name="intelligence" id="intelligence-input" value="50">
+                    </div>
                 </div>
-                <div id="luck-div">
-                    <label for="luck">Luck:</label>
-                    <input type="number" name="luck" id="luck-input" required>
+                <div id="luck-div" class="combo-input">
+                    <div class="label">
+                        <label for="luck">Luck</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="luck" id="luck-input" value="50">
+                    </div>
                 </div>
-                <div id="enchantment-points">
-                    <label for="enchantment-points">Enchantment points:</label>
-                    <input type="number" name="luck" id="enchantment-points-input">
+                <div id="enchantment-points" class="combo-input">
+                    <div class="label">
+                        <label for="enchantment-points">Enchantment Points</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="enchantment-points" id="enchantment-points-input" min="1" value="1">
+                    </div>
                 </div>
+            </div>
+            <div id="footer">
                 <div id="options-div">
                     <label for="constant-effect">Constant Effect</label>
                     <input id="constant-effect-checkbox" name="constant-effect" type="checkbox"/>
                 </div>
                 <div id="buttons">
-                    <input id="button-calculate-success" type="submit">Calculate success chance!</input>
+                    <button id="button-calculate-success">Calculate success chance!</button>
+                    <button id="button-min-0-success">Calculate minimum enchantment points for >0% success</button>
+                    <button id="button-min-100-success">Calculate maximum enchantment points for 100% success</button>
                 </div>
-            </form>
+            </div>
             <div id="results">
                 <p id="results-p"></p>
             </div>
