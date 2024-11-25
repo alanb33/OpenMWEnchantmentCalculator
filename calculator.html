@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="calculator.js"></script>
+        <link rel="stylesheet" href="styles.css"></link>
+    </head>
+    <body>
+        <div id="enchantment-form-div">
+            <form id="enchantment-form">
+                <div id="enchant-div">
+                    <label for="enchant">Enchant skill:</label>
+                    <input type="number" name="enchant" id="enchant-input" required>
+                </div>
+                <div id="intelligence-div">
+                    <label for="intelligence">Intelligence:</label>
+                    <input type="number" name="intelligence" id="intelligence-input" required>
+                </div>
+                <div id="luck-div">
+                    <label for="luck">Luck:</label>
+                    <input type="number" name="luck" id="luck-input" required>
+                </div>
+                <div id="enchantment-points">
+                    <label for="enchantment-points">Enchantment points:</label>
+                    <input type="number" name="luck" id="enchantment-points-input">
+                </div>
+                <div id="options-div">
+                    <label for="constant-effect">Constant Effect</label>
+                    <input id="constant-effect-checkbox" name="constant-effect" type="checkbox"/>
+                </div>
+                <div id="buttons">
+                    <input id="button-calculate-success" type="submit">Calculate success chance!</input>
+                </div>
+            </form>
+            <div id="results">
+                <p id="results-p"></p>
+            </div>
+        </div>
+    </body>
+</html>
